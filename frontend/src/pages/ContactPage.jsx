@@ -7,20 +7,22 @@ const ContactPage = () => {
   return (
     <div className="bg-[#edf7fc] min-h-screen">
       {/* Navbar Section */}
-      <header className="w-full bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between  py-3 space-y-2 md:space-y-0">
-          {/* Logo & Brand Name */}
-          <div className="flex items-center space-x-3 hidden md:block">
-            <img src={logo} alt="Logo" className="h-8 w-8 object-contain" />
-            <span className="text-2xl font-bold text-[#50b8e7]">NutriScan</span>
-          </div>
+       <header className="w-full bg-white shadow-md sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between py-3 space-y-2 md:space-y-0">
+            {/* Logo & Brand Name */}
+            <div className="flex items-center space-x-3 hidden md:flex">
+              <img src={logo} alt="Logo" className="h-8 w-8 object-contain" />
+              <span className="text-2xl font-bold text-[#50b8e7]">
+                NutriScan
+              </span>
+            </div>
 
-          {/* Navbar */}
-          <nav className="w-full md:w-auto">
-            <Navbar />
-          </nav>
-        </div>
-      </header>
+            {/* Navbar */}
+            <nav className="w-full md:w-auto">
+              <Navbar />
+            </nav>
+          </div>
+        </header>
 
       {/* Main Contact Section */}
       <main className="p-4 mt-5 flex items-center justify-center">

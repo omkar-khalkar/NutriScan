@@ -81,7 +81,7 @@ def analyze_food_packet( extracted_text: str , table_text = []) -> NutritionRepo
     Ensure the values are realistic and medically informed. Do not skip any fields. Keep responses compact and factual.
     """
 
-    client = genai.Client(api_key="AIzaSyBZhf_ZVUXS3qDHa6N-tJr93HnYWVlQKV0")
+    client = genai.Client(api_key="AIzaSyCbdPVYUk6GLMF0Rp3aM6eToOF6QOTZiK0")
 
     response = client.models.generate_content(
         model='gemini-2.0-flash',
